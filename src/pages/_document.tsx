@@ -4,8 +4,9 @@ import { documentGetInitialProps, DocumentHeadTags, DocumentHeadTagsProps } from
 export default function Document(props: DocumentProps & DocumentHeadTagsProps) {
   return (
     <Html lang="en">
-      <Head />
-      <DocumentHeadTags {...props} />
+      <Head>
+        <DocumentHeadTags {...props} />
+      </Head>
       <body>
         <Main />
         <NextScript />
