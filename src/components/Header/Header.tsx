@@ -3,6 +3,7 @@ import styles from './Header.module.css';
 import { ROUTE } from "@/constants/enum";
 import { DoubleArrowDownIcon, HamburgerIcon } from "../Icons";
 import { League_Spartan } from 'next/font/google'
+import { useRouter } from 'next/router';
  
 const labelSubtitle = League_Spartan({
   variable: '--font-spartan',
@@ -14,8 +15,13 @@ interface IHeader {
 }
 
 export default function Header(props: IHeader) {
+    const router = useRouter()
     let title
     let subtitle
+
+    const handleNavigate = (route: ROUTE) => {
+      router.push(route);
+    }
 
     switch(props.path) {
         case ROUTE.HOME:
@@ -44,7 +50,7 @@ export default function Header(props: IHeader) {
         <Box className={styles.headerWrapper}>
             <Box className={styles.headerContainer}>
                 <Box className={styles.buttonsContainer}>
-                    <Box className={styles.logoContainer}>
+                    <Box className={styles.logoContainer} onClick={() => {handleNavigate(ROUTE.HOME)}}>
 
                     </Box>
                     <Box className={styles.menuButtonContainer}>
