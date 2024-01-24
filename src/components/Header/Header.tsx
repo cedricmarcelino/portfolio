@@ -2,6 +2,12 @@ import { Box, Typography } from "@mui/material";
 import styles from './Header.module.css';
 import { ROUTE } from "@/constants/enum";
 import { DoubleArrowDownIcon, HamburgerIcon } from "../Icons";
+import { League_Spartan } from 'next/font/google'
+ 
+const labelSubtitle = League_Spartan({
+  variable: '--font-spartan',
+  subsets: ["latin"]
+})
 
 interface IHeader {
     path: ROUTE
@@ -49,7 +55,7 @@ export default function Header(props: IHeader) {
                     <Typography className={styles.labelTitle}>
                         {title}
                     </Typography>
-                    <Typography className={styles.labelSubtitle}>
+                    <Typography className={`${labelSubtitle.variable} ${styles.labelSubtitle}`}>
                         {subtitle}
                     </Typography>
                 </Box>
