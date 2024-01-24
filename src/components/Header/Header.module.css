@@ -1,0 +1,63 @@
+.headerWrapper {
+    min-height: 100vh;
+    background: #000;
+}
+
+.headerContainer {
+    padding: 20px 37px;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.labelTitle {
+    color: #FFF;
+    text-align: center;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80%;
+    text-transform: uppercase;
+}
+
+.labelSubtitle {
+    margin-top: 10px;
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 11.52px;
+    text-transform: uppercase;
+}
+
+.logoContainer {
+    width: 40px;
+    height: 40px;
+    background: white;
+    cursor: pointer;
+}
+
+.menuButtonContainer :global(svg){
+    width: 31.25px;
+    height: 20px;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.arrowIcon {
+    margin-top: 10px;
+    fill: white;
+    width: 31.25px;
+    height: 20px;
+}
