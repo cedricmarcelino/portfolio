@@ -34,13 +34,13 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
       <link rel="icon" href="/favicon.ico" />
     </Head>
      <CssBaseline>
-     <StyledEngineProvider injectFirst>
-      <ThemeProvider theme={theme}>
-        <RootLayout path={router.pathname as ROUTE}>
-          <Component {...pageProps} />
-        </RootLayout>
-      </ThemeProvider>
-      <StyledEngineProvider/>
+      <StyledEngineProvider injectFirst>
+        <ThemeProvider theme={theme}>
+          <RootLayout path={router.pathname as ROUTE}>
+            <Component {...pageProps} />
+          </RootLayout>
+        </ThemeProvider>
+      </StyledEngineProvider>
      </CssBaseline>
     </>
   );
