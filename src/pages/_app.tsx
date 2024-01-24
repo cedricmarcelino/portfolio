@@ -2,7 +2,7 @@ import RootLayout from '@/components/RootLayout/RootLayout';
 import type { AppProps } from "next/app";
 import { ThemeProvider } from '@emotion/react';
 import theme from '../theme'
-import { CssBaseline } from '@mui/material';
+import { CssBaseline, StyledEngineProvider } from '@mui/material';
 import Head from 'next/head';
 import { ROUTE } from '@/constants/enum';
 
@@ -34,11 +34,13 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
       <link rel="icon" href="/favicon.ico" />
     </Head>
      <CssBaseline>
+     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <RootLayout path={router.pathname as ROUTE}>
           <Component {...pageProps} />
         </RootLayout>
       </ThemeProvider>
+      <StyledEngineProvider/>
      </CssBaseline>
     </>
   );
