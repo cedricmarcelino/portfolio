@@ -1,0 +1,60 @@
+.homeContainer {
+    padding: 60px 37px;
+    padding-bottom: 30px;
+}
+
+.title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: var(--font-spartan);
+    margin-bottom: 20px;
+}
+
+.content {
+    margin-bottom: 60px;
+}
+
+.skillsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.projectsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 38px;
+}
+
+.buttonText, .content {
+    color: #000;
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.button {
+    background: #D9D9D9;
+    width: 297px;
+    padding: 18px 51px;
+    border-radius: 0px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.button:hover {
+    background: #D9D9D9;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
