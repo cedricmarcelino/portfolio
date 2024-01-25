@@ -3,7 +3,7 @@ import styles from './home.module.css'
 import { League_Spartan, Roboto } from 'next/font/google';
 import { useRouter } from 'next/navigation';
 import { ROUTE } from "@/constants/enum";
-import { CSSIcon, DockerIcon, FigmaIcon, GithubIcon, HTMLIcon, JavascriptIcon, JenkinsIcon, JestIcon, MUIIcon, NPMIcon, NextJSIcon, RTLIcon, ReactIcon, TypescriptIcon } from "@/components/Icons";
+import { CSSIcon, DockerIcon, FigmaIcon, GithubIcon, HTMLIcon, JavascriptIcon, JenkinsIcon, JestIcon, MUIIcon, NPMIcon, NextJSIcon, RTLIcon, ReactIcon, ReduxIcon, TypescriptIcon } from "@/components/Icons";
  
 const spartan = League_Spartan({
   variable: '--font-spartan',
@@ -34,6 +34,10 @@ export default function Home() {
     {
       icon: <RTLIcon className={`${styles.icon} ${styles.RTLIcon}`}/>,
       skill: 'React Testing Library'
+    },
+    {
+      icon: <ReduxIcon className={styles.icon}/>,
+      skill: 'Redux Toolkit'
     },
     {
       icon: <JestIcon className={styles.icon}/>,
