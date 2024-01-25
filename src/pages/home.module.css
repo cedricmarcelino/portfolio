@@ -74,3 +74,11 @@
     min-width: 195px;
     align-items: center;
 }
+
+.RTLIcon :global(path){
+    fill: #E33332;
+}
+
+.reactIcon :global(path){
+    fill: #61DAFB;
+}

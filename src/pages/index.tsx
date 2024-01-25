@@ -3,7 +3,7 @@ import styles from './home.module.css'
 import { League_Spartan, Roboto } from 'next/font/google';
 import { useRouter } from 'next/navigation';
 import { ROUTE } from "@/constants/enum";
-import { CSSIcon, DockerIcon, FigmaIcon, GithubIcon, HTMLIcon, JavascriptIcon, JenkinsIcon, JestIcon, MUIIcon, NPMIcon, NextJSIcon, RTLIcon, ReactIcon } from "@/components/Icons";
+import { CSSIcon, DockerIcon, FigmaIcon, GithubIcon, HTMLIcon, JavascriptIcon, JenkinsIcon, JestIcon, MUIIcon, NPMIcon, NextJSIcon, RTLIcon, ReactIcon, TypescriptIcon } from "@/components/Icons";
  
 const spartan = League_Spartan({
   variable: '--font-spartan',
@@ -17,15 +17,22 @@ const roboto = Roboto({
   subsets: ["latin"]
 })
 
+type ISkills = ISkill[]
+
+interface ISkill {
+  icon: JSX.Element
+  skill: string
+}
+
 export default function Home() {
   const router = useRouter()
-  const skills = [
+  const skills: ISkills = [
     {
-      icon: <ReactIcon className={styles.icon}/>,
+      icon: <ReactIcon className={`${styles.icon} ${styles.reactIcon}`}/>,
       skill: 'ReactJS'
     },
     {
-      icon: <RTLIcon className={styles.icon}/>,
+      icon: <RTLIcon className={`${styles.icon} ${styles.RTLIcon}`}/>,
       skill: 'React Testing Library'
     },
     {
@@ -71,6 +78,10 @@ export default function Home() {
     {
       icon: <NPMIcon className={styles.icon}/>,
       skill: 'NPM'
+    },
+    {
+      icon: <TypescriptIcon className={styles.icon}/>,
+      skill: 'Typescript'
     },
   ]
 
