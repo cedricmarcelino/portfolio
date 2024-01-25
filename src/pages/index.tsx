@@ -3,6 +3,7 @@ import styles from './home.module.css'
 import { League_Spartan, Roboto } from 'next/font/google';
 import { useRouter } from 'next/navigation';
 import { ROUTE } from "@/constants/enum";
+import { CSSIcon, DockerIcon, FigmaIcon, GithubIcon, HTMLIcon, JavascriptIcon, JenkinsIcon, JestIcon, MUIIcon, NPMIcon, NextJSIcon, RTLIcon, ReactIcon } from "@/components/Icons";
  
 const spartan = League_Spartan({
   variable: '--font-spartan',
@@ -18,6 +19,60 @@ const roboto = Roboto({
 
 export default function Home() {
   const router = useRouter()
+  const skills = [
+    {
+      icon: <ReactIcon className={styles.icon}/>,
+      skill: 'ReactJS'
+    },
+    {
+      icon: <RTLIcon className={styles.icon}/>,
+      skill: 'React Testing Library'
+    },
+    {
+      icon: <JestIcon className={styles.icon}/>,
+      skill: 'Jest Testing Framework'
+    },
+    {
+      icon: <GithubIcon className={styles.icon}/>,
+      skill: 'Github'
+    },
+    {
+      icon: <MUIIcon className={styles.icon}/>,
+      skill: 'Material UI'
+    },
+    {
+      icon: <HTMLIcon className={styles.icon}/>,
+      skill: 'HTML'
+    },
+    {
+      icon: <JavascriptIcon className={styles.icon}/>,
+      skill: 'Javascript'
+    },
+    {
+      icon: <CSSIcon className={styles.icon}/>,
+      skill: 'CSS'
+    },
+    {
+      icon: <DockerIcon className={styles.icon}/>,
+      skill: 'Docker'
+    },
+    {
+      icon: <JenkinsIcon className={styles.icon}/>,
+      skill: 'Jenkins'
+    },
+    {
+      icon: <NextJSIcon className={styles.icon}/>,
+      skill: 'NextJS'
+    },
+    {
+      icon: <FigmaIcon className={styles.icon}/>,
+      skill: 'Figma'
+    },
+    {
+      icon: <NPMIcon className={styles.icon}/>,
+      skill: 'NPM'
+    },
+  ]
 
   const handleNavigate = (route: ROUTE) => {
     router.push(route);
@@ -35,10 +90,16 @@ export default function Home() {
           My skills
         </Typography>
         <Box className={styles.skillsContainer}>
-
-        </Box>
-        <Box className={styles.projectsContainer}>
-
+          {skills.map((skill,value) => {
+            return(
+              <Box className={styles.skillContainer} key={value}>
+                {skill.icon}
+                <Typography className={`${styles.skill} ${roboto.variable}`}>
+                  {skill.skill}
+                </Typography>
+              </Box>
+            )
+          })}
         </Box>
         <Box className={styles.buttonsContainer}>
           <Button variant='contained' className={styles.button} onClick={() => {handleNavigate(ROUTE.PROJECTS)}}>
