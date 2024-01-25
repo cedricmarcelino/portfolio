@@ -83,9 +83,19 @@ export default function Home() {
         <Typography className={`${styles.title} ${spartan.variable}`}>
           About me
         </Typography>
-        <Typography className={`${styles.content} ${roboto.variable}`}>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-        </Typography>
+        <Box className={styles.contentContainer}>
+          <Typography className={`${styles.content} ${roboto.variable}`}>
+            As a web developer, I help companies achieve a consistent look and theme across their web applications.
+            I help them implement a robust coding practice to improve web applications performance and mitigate application bugs.
+          </Typography>
+          <Typography className={`${styles.content} ${roboto.variable}`}>
+            I thrive best in a collaborative evironment, I believe that a team that collaborates effectively will achieve their goals efficiently.
+          </Typography>
+          <Typography className={`${styles.content} ${roboto.variable}`}>
+            I also like being outside my comfort zone, it helps me try my best to keep up and keep on learning new things.
+            I believe that I would be a great addition to any companies or development team out there looking for a good web developer.
+          </Typography>
+        </Box>
         <Typography className={`${styles.title} ${spartan.variable}`}>
           My skills
         </Typography>
