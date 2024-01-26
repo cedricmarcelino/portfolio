@@ -44,8 +44,10 @@
 .logoContainer{
     width: 58px;
     height: 58px;
-    background: white;
     margin-right: 21px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .logoAndContactsContainer{

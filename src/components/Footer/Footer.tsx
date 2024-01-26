@@ -3,6 +3,7 @@ import styles from './Footer.module.css'
 import { Roboto } from 'next/font/google';
 import { useRouter } from "next/navigation";
 import { ROUTE } from "@/constants/enum";
+import logo from '../../../public/images/logo.png'
  
 const roboto = Roboto({
   variable: '--font-roboto',
@@ -33,9 +34,7 @@ export default function Footer() {
                     </Typography>
                 </Box>
                 <Box className={styles.logoAndContactsContainer}>
-                    <Box className={styles.logoContainer}  onClick={() => {handleNavigate(ROUTE.HOME)}}>
-
-                    </Box>
+                    <Box className={styles.logoContainer}  onClick={() => {handleNavigate(ROUTE.HOME)}} sx={{backgroundImage: `url(${logo.src})`}}/>
                     <Box className={styles.contactsContainer}>
                         <Typography className={`${styles.contacts} ${roboto.variable} ${styles.contactEmail}`}>
                             cedricmarcelino1105@gmail.com

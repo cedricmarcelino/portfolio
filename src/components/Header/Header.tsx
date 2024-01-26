@@ -5,6 +5,7 @@ import { DoubleArrowDownIcon, HamburgerIcon } from "../Icons";
 import { League_Spartan } from 'next/font/google'
 import { useRouter } from 'next/router';
 import { Dispatch, SetStateAction } from "react";
+import logo from '../../../public/images/logo.png'
  
 const labelSubtitle = League_Spartan({
   variable: '--font-spartan',
@@ -58,9 +59,7 @@ export default function Header(props: IHeader) {
         <Box className={styles.headerWrapper}>
             <Box className={styles.headerContainer}>
                 <Box className={styles.buttonsContainer}>
-                    <Box className={styles.logoContainer} onClick={() => {handleNavigate(ROUTE.HOME)}}>
-
-                    </Box>
+                    <Box className={styles.logoContainer} onClick={() => {handleNavigate(ROUTE.HOME)}} sx={{backgroundImage: `url(${logo.src})`}}/>
                     <Box className={styles.menuButtonContainer} onClick={handleMenu}>
                         <HamburgerIcon/>
                     </Box>
