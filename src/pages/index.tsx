@@ -96,7 +96,7 @@ export default function Home() {
     <main>
       <Box className={styles.homeContainer}>
         <Typography className={`${styles.title} ${spartan.variable}`}>
-          About me
+          About Me
         </Typography>
         <Box className={styles.contentContainer}>
           <Typography className={`${styles.content} ${roboto.variable}`}>
@@ -112,7 +112,7 @@ export default function Home() {
           </Typography>
         </Box>
         <Typography className={`${styles.title} ${spartan.variable}`}>
-          My skills
+          My Skills
         </Typography>
         <Box className={styles.skillsContainer}>
           {skills.map((skill,value) => {
