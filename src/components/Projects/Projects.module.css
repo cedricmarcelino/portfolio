@@ -73,3 +73,14 @@
 .buttonText {
     color: #000
 }
+
+@media screen and (min-width: 1440px) {
+    .projectContainer {
+        width: 360px;
+        height: 455px;
+    }
+
+    .button {
+        width: 120px;
+    }
+}
