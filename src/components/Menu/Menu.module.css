@@ -1,0 +1,87 @@
+.menuContainer {
+    min-height: 100vh;
+    background: #fff;
+    padding: 20px 37px;
+}
+
+.closeContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+}
+
+.closeIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.menuLabel {
+    text-orientation: sideways;
+    writing-mode: vertical-rl; 
+    rotate: 180deg;
+    text-align: right;
+    font-family: var(--font-spartan-500);
+    font-size: 24px;
+    line-height: normal;
+}
+
+.menuListContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 6px;
+}
+
+.menuLinks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+}
+
+.menuLink {
+    color: #000;
+    font-family: var(--font-spartan-700);
+    font-size: 48px;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.menuLink:hover {
+    color: #D9D9D9;
+    text-decoration: underline;
+}
+
+.socialLinkIcon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.socialLinksContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.menuContentContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 250px;
+    max-width: 775px;
+    align-items: end;
+    row-gap: 92px;
+    margin: auto;
+}
+
+.contactInfo{
+    font-family: var(--font-spartan-600);
+    font-size: 20px;
+    line-height: normal;
+}

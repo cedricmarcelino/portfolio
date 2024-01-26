@@ -4,6 +4,7 @@ import { ROUTE } from "@/constants/enum";
 import { DoubleArrowDownIcon, HamburgerIcon } from "../Icons";
 import { League_Spartan } from 'next/font/google'
 import { useRouter } from 'next/router';
+import { Dispatch, SetStateAction } from "react";
  
 const labelSubtitle = League_Spartan({
   variable: '--font-spartan',
@@ -12,9 +13,12 @@ const labelSubtitle = League_Spartan({
 
 interface IHeader {
     path: ROUTE
+    setIsOpen: Dispatch<SetStateAction<boolean>>
+    isOpen: boolean
 }
 
 export default function Header(props: IHeader) {
+    const { path, setIsOpen, isOpen } = props
     const router = useRouter()
     let title
     let subtitle
@@ -23,7 +27,11 @@ export default function Header(props: IHeader) {
       router.push(route);
     }
 
-    switch(props.path) {
+    const handleMenu = () => {
+        setIsOpen(!isOpen)
+    }
+
+    switch(path) {
         case ROUTE.HOME:
           title = 'Cedric Marcelino'
           subtitle = 'Web Developer'
@@ -53,7 +61,7 @@ export default function Header(props: IHeader) {
                     <Box className={styles.logoContainer} onClick={() => {handleNavigate(ROUTE.HOME)}}>
 
                     </Box>
-                    <Box className={styles.menuButtonContainer}>
+                    <Box className={styles.menuButtonContainer} onClick={handleMenu}>
                         <HamburgerIcon/>
                     </Box>
                 </Box>
