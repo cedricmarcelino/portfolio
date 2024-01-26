@@ -75,7 +75,7 @@
     flex-wrap: wrap;
     column-gap: 250px;
     max-width: 775px;
-    align-items: end;
+    align-items: flex-end;
     row-gap: 92px;
     margin: auto;
 }
