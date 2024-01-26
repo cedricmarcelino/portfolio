@@ -85,3 +85,22 @@
     font-size: 20px;
     line-height: normal;
 }
+
+@media screen and (min-width: 1440px) {
+    .menuContainer {
+        padding: 60px 120px;
+    }
+
+    .menuLink {
+        font-size: 64px;
+        
+    }
+
+    .menuListContainer {
+        column-gap: 33px;
+    }
+
+    .menuContentContainer {
+        max-width: 875px;
+    }
+}
