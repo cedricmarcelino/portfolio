@@ -82,3 +82,9 @@
 .reactIcon :global(path){
     fill: #61DAFB;
 }
+
+@media screen and (min-width: 1440px) {
+    .title {
+        font-size: 32px;
+    }
+}
