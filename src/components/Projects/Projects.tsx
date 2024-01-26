@@ -81,13 +81,13 @@ export default function ProjectsComponent() {
                             </Box>
                         </Box>
                         <Box className={styles.buttonsContainer}>
-                            <Button variant='contained' className={styles.button}>
-                                <Typography className={`${styles.buttonText}  ${roboto400.variable}`} onClick={() => {handleClick(project.repo)}}>
+                            <Button variant='contained' className={styles.button} onClick={() => {handleClick(project.repo)}}>
+                                <Typography className={`${styles.buttonText}  ${roboto400.variable}`}>
                                     Repo
                                 </Typography>
                             </Button>
-                            <Button variant='contained' className={styles.button}>
-                                <Typography className={`${styles.buttonText}  ${roboto400.variable}`} onClick={() => {handleClick(project.deployment)}}>
+                            <Button variant='contained' className={styles.button} onClick={() => {handleClick(project.deployment)}}>
+                                <Typography className={`${styles.buttonText}  ${roboto400.variable}`}>
                                     Live
                                 </Typography>
                             </Button>

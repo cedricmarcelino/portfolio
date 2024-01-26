@@ -33,7 +33,7 @@ export default function Footer() {
                     </Typography>
                 </Box>
                 <Box className={styles.logoAndContactsContainer}>
-                    <Box className={styles.logoContainer}>
+                    <Box className={styles.logoContainer}  onClick={() => {handleNavigate(ROUTE.HOME)}}>
 
                     </Box>
                     <Box className={styles.contactsContainer}>
