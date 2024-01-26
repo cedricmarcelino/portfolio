@@ -64,3 +64,26 @@
 .button:hover {
     background: #D9D9D9;
 }
+
+@media screen and (min-width: 1440px) { 
+    .contactContainer {
+        padding: 80px 0px;
+        max-width: 1200px;
+    }
+
+    .nameField, .emailField {
+        width: 545px;
+    }
+
+    .contactTitle {
+        font-size: 32px;
+    }
+
+    .contactContainer :global(label) {
+        font-size: 24px;
+    }
+
+    .contactContainer :global(input), .contactContainer :global(textarea)  {
+        font-size: 24px;
+    }
+}
