@@ -1,0 +1,66 @@
+.contactContainer {
+    padding: 60px 37px;
+    max-width: 720px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.contactTitle {
+    font-family: var(--font-spartan);
+    font-size: 24px;
+    line-height: normal;
+}
+
+.nameField, .emailField {
+    width: 298px;
+}
+
+.nameAndEmailContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.messageField {
+    width: 100%
+}
+
+.contactContainer :global(label) {
+    color: #000;
+    font-family: var(--font-spartan);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contactContainer :global(input), .contactContainer :global(textarea)  {
+    font-family: var(--font-roboto);
+}
+
+.buttonText {
+    color: #000;
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button {
+    background: #D9D9D9;
+    width: 297px;
+    padding: 18px 51px;
+    border-radius: 0px;
+    text-transform: capitalize;
+    margin: auto;
+}
+
+.button:hover {
+    background: #D9D9D9;
+}
