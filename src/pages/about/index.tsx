@@ -38,17 +38,17 @@ export default function About() {
                         everyone kept on telling me to pursue an engineering course in college, so I did.
                     </Typography>
                     <Typography className={`${styles.backgroundContent} ${roboto400.variable}`}>
-                        I enrolled for a bachelor's degree in Electronics and Communications Engineering, the first year was okay, but when my major classes came in on my second year,
+                        I enrolled for a bachelor&apos;s degree in Electronics and Communications Engineering, the first year was okay, but when my major classes came in on my second year,
                         I realized that it was not meant for me. However, we were taught some basic programming language in our first year, and I loved it! So I decided to transfer to a 
-                        different university and enrolled for a bachelor's degree in Computer Science.
+                        different university and enrolled for a bachelor&apos;s degree in Computer Science.
                     </Typography>
                     <Typography className={`${styles.backgroundContent} ${roboto400.variable}`}>
-                        I really enjoyed any class that is related to programming, however I didn't quite enjoy minor classes like Foreign Language and Psychology, basically anything 
+                        I really enjoyed any class that is related to programming, however I didn&apos;t quite enjoy minor classes like Foreign Language and Psychology, basically anything 
                         not related to programming. So I kind of got bored and gotten into selling E-Cigarette/Vape products. I was earning decent money while I was selling these 
                         products so I stopped going to school and did it full time.
                     </Typography>
                     <Typography className={`${styles.backgroundContent} ${roboto400.variable}`}>
-                        I was doing financially well and I could've just stuck with that business, however after a year or two, I realized that it isn't something I wanted to do for the rest 
+                        I was doing financially well and I could&apos;ve just stuck with that business, however after a year or two, I realized that it isn&apos;t something I wanted to do for the rest 
                         of my life. So I decided to find another job that would hire me despite not having a bachelor degree. I got hired in a company called Furbo as a customer service representative, 
                         I lasted there for 2 years and I must say that I really did enjoy working there. But then again, I realized that it is not something I would want to do for the rest of my life.
                     </Typography>
@@ -76,7 +76,7 @@ export default function About() {
                         to still enjoy the game with other people.
                     </Typography>
                     <Typography className={`${styles.hobbiesContent} ${roboto400.variable}`}>
-                        I enjoy spending the night out with friends and go to a night club to have some fun and enjoy our lives! I want to be as social as I can, I find it amusing learning things from other people's 
+                        I enjoy spending the night out with friends and go to a night club to have some fun and enjoy our lives! I want to be as social as I can, I find it amusing learning things from other people&apos;s 
                         experiences in life.
                     </Typography>
                     <Typography className={`${styles.hobbiesContent} ${roboto400.variable}`}>
