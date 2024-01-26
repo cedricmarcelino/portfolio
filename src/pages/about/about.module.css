@@ -1,0 +1,53 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    padding: 60px 37px;
+    max-width: 720px;
+    margin: auto;
+}
+
+.button {
+    background: #D9D9D9;
+    width: 297px;
+    padding: 18px 51px;
+    border-radius: 0px;
+    text-transform: capitalize;
+    margin: auto;
+}
+
+.button:hover {
+    background: #D9D9D9;
+}
+
+.buttonText {
+    font-family: var(--font-roboto);
+    color: #000;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.backgroundTitle, .hobbiesTitle {
+    font-family: var(--font-spartan);
+    font-size: 24px;
+    line-height: normal;
+}
+
+.backgroundContainer, .hobbiesContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.backgroundContent, .hobbiesContent{
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    line-height: normal;
+}
+
+.backgroundContentContainer, .hobbiesContentContainer {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
