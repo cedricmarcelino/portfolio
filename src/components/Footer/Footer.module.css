@@ -66,3 +66,39 @@
 .contactEmail {
     font-size: 14.1px;
 }
+
+@media screen and (min-width: 1440px) {
+    .logoAndContactsContainer {
+        flex-direction: row-reverse;
+        width: 50%;
+        margin: 0px;
+        justify-content: space-between  ;
+    }
+
+    .linksContainer {
+        margin: 0px;
+    }
+
+    .footerWrapper {
+        padding: 160px 120px;
+    }
+
+    .footerContainer {
+        column-gap: 0px;
+        align-items: start;
+    }
+
+    .logoContainer {
+        margin-right: 0px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .contactEmail {
+        font-size: 16px;
+    }
+
+    .contactsContainer{
+        max-width: none;
+    }
+}
