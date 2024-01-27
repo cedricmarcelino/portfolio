@@ -30,13 +30,27 @@
     width: 100%
 }
 
-.contactContainer :global(label) {
+.contactContainer :global(label), .snackbarMessage {
     color: #000;
     font-family: var(--font-spartan);
     font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
     line-height: normal;
+}
+
+.contactContainer :global(.MuiInput-underline:after) {
+    border-bottom-color: #707070
+}
+
+.contactContainer :global(label.Mui-focused) {
+    color: #707070
+}
+
+.snackbarMessage {
+    color: white;
+}
+
+.snackbar :global(.MuiAlert-root) {
+    align-items: center;
 }
 
 .contactContainer :global(input), .contactContainer :global(textarea)  {
@@ -52,6 +66,12 @@
     line-height: normal;
 }
 
+.emailField :global(.MuiFormHelperText-root) {
+    font-family: var(--font-spartan);
+    font-size: 14px;
+    line-height: normal;
+}
+
 .button {
     background: #D9D9D9;
     width: 297px;
@@ -63,6 +83,10 @@
 
 .button:hover {
     background: #D9D9D9;
+}
+
+.contactContainer :global(.Mui-disabled) {
+    opacity: 50%;
 }
 
 @media screen and (min-width: 1440px) { 
