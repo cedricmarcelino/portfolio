@@ -58,6 +58,9 @@ export default function Contact() {
     }
 
     const handleSendMessage = async () => {
+        console.log(process.env.EMAILJS_SERVICE_ID, 'process.env.EMAILJS_SERVICE_ID')
+        console.log(process.env.EMAILJS_TEMPLATE_ID, 'process.env.EMAILJS_TEMPLATE_ID')
+        console.log(process.env.EMAILJS_PUBLIC_KEY, 'process.env.EMAILJS_PUBLIC_KEY')
         handleClose()
         const emailJS = {
             service_id: process.env.EMAILJS_SERVICE_ID as string,
@@ -75,12 +78,15 @@ export default function Contact() {
                         handleSuccess()
                     } else {
                         handleError()
+                        console.log(response)
                     }
                     }, (error) => {
                         handleError()
+                        console.log(error)
                     })
-        } catch {
+        } catch(error) {
             handleError()
+            console.log(error)
         }
         
     }
