@@ -13,7 +13,7 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
       <title>My Portfolio | Cedric Jastine Marcelino</title>
       <meta name="description" content="A Web Development Portfolio by Cedric Jastine Marcelino" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/logo.ico" />
     </Head>
      <CssBaseline>
       <StyledEngineProvider injectFirst>
