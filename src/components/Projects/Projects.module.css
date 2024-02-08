@@ -40,6 +40,10 @@
     line-height: normal;
 }
 
+.tech {
+    font-size: 13.5px;
+}
+
 .techTitle {
     margin-bottom: 8px;
 }
@@ -82,5 +86,9 @@
 
     .button {
         width: 120px;
+    }
+
+    .tech {
+        font-size: 16px;
     }
 }

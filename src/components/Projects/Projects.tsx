@@ -3,6 +3,7 @@ import styles from './Projects.module.css'
 import { Roboto } from "next/font/google"
 import shoppingCartImage from '../../../public/images/shopping-carts.jpg'
 import bankImage from '../../../public/images/bank.jpg'
+import auth from '../../../public/images/auth.jpg'
 
 type IProjects = IProject[]
 interface IProject {
@@ -56,6 +57,13 @@ export default function ProjectsComponent() {
             repo: 'https://github.com/cedricmarcelino/banking-app-project',
             deployment: 'https://cedricmarcelino.github.io/banking-app-project/',
             image: bankImage.src
+        },
+        {
+            title: 'Authentication API',
+            techs: ['Express JS', 'Typescript', 'Jsonwebtoken', 'Bcrypt', 'Cookie Parser', 'Joi', 'PG Promise', 'AWS ECR & EC2', 'Swagger', 'Pino HTTP', 'Docker'],
+            repo: 'https://github.com/cedricmarcelino/authentication-api',
+            deployment: 'http://44.223.69.226:4000/explorer/',
+            image: auth.src
         }
     ]
     return (
