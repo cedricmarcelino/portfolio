@@ -60,7 +60,7 @@ export default function ProjectsComponent() {
         },
         {
             title: 'Authentication API',
-            techs: ['Express JS', 'Typescript', 'Jsonwebtoken', 'Bcrypt', 'Cookie Parser', 'Joi', 'PG Promise', 'AWS ECR & EC2', 'Swagger', 'Pino HTTP', 'Docker'],
+            techs: ['Express.js', 'Typescript', 'Jsonwebtoken', 'Bcrypt', 'Cookie Parser', 'Joi', 'PG Promise', 'AWS ECR & EC2', 'Swagger', 'Pino HTTP', 'Docker'],
             repo: 'https://github.com/cedricmarcelino/authentication-api',
             deployment: 'http://44.223.69.226:4000/explorer/',
             image: auth.src

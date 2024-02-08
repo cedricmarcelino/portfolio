@@ -3,7 +3,7 @@ import styles from './home.module.css'
 import { League_Spartan, Roboto } from 'next/font/google';
 import { useRouter } from 'next/navigation';
 import { ROUTE } from "@/constants/enum";
-import { CSSIcon, DockerIcon, FigmaIcon, GithubIcon, HTMLIcon, JavascriptIcon, JenkinsIcon, JestIcon, MUIIcon, NPMIcon, NextJSIcon, RTLIcon, ReactIcon, ReduxIcon, TypescriptIcon } from "@/components/Icons";
+import { CSSIcon, DockerIcon, ExpressIcon, FigmaIcon, GithubIcon, HTMLIcon, JavascriptIcon, JenkinsIcon, JestIcon, MUIIcon, NPMIcon, NextJSIcon, NodeIcon, PostgreSQLIcon, RTLIcon, ReactIcon, ReduxIcon, SwaggerIcon, TypescriptIcon } from "@/components/Icons";
  
 const spartan = League_Spartan({
   variable: '--font-spartan',
@@ -87,6 +87,22 @@ export default function Home() {
       icon: <TypescriptIcon className={styles.icon}/>,
       skill: 'Typescript'
     },
+    {
+      icon: <ExpressIcon className={styles.icon}/>,
+      skill: 'Express.js'
+    },
+    {
+      icon: <NodeIcon className={styles.icon}/>,
+      skill: 'NodeJS'
+    },
+    {
+      icon: <PostgreSQLIcon className={styles.icon}/>,
+      skill: 'PostgreSQL'
+    },
+    {
+      icon: <SwaggerIcon className={styles.icon}/>,
+      skill: 'Swagger'
+    }
   ]
 
   const handleNavigate = (route: ROUTE) => {
